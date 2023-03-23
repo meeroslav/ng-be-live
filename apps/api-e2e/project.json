@@ -18,5 +18,6 @@
         "lintFilePatterns": ["apps/api-e2e/**/*.{js,ts}"]
       }
     }
-  }
+  },
+  "tags": ["scope:api"]
 }
