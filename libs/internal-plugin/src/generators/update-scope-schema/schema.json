@@ -2,7 +2,5 @@
   "$schema": "http://json-schema.org/schema",
   "cli": "nx",
   "$id": "UpdateScopeSchema",
-  "title": "",
-  "type": "object",
   "properties": {}
 }

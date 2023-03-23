@@ -16,34 +16,25 @@
     },
     "directory": {
       "type": "string",
-      "description": "A directory where the project is placed",
+      "description": "The scope of your lib.",
       "x-prompt": {
-        "message": "In which directory to generate?",
+        "message": "Which directory do you want the lib to be in?",
         "type": "list",
         "items": [
           {
-            "value": "api",
-            "label": "Api"
-          },
-          {
-            "value": "internal",
-            "label": "Internal"
-          },
-          {
             "value": "store",
-            "label": "Store"
+            "label": "store"
           },
           {
-            "value": "test",
-            "label": "Test"
+            "value": "api",
+            "label": "api"
           },
           {
             "value": "shared",
-            "label": "Shared"
+            "label": "shared"
           }
         ]
-      },
-      "enum": ["api", "internal", "store", "test", "shared"]
+      }
     }
   },
   "required": ["name"]
