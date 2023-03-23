@@ -18,7 +18,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
-    // make meanigless change
   });
 
   it(`should have as title 'Game Hoard Board'`, () => {
