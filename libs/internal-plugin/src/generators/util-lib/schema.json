@@ -26,6 +26,10 @@
             "label": "Api"
           },
           {
+            "value": "internal",
+            "label": "Internal"
+          },
+          {
             "value": "store",
             "label": "Store"
           },
@@ -35,7 +39,7 @@
           }
         ]
       },
-      "enum": ["api", "store", "shared"]
+      "enum": ["api", "internal", "store", "shared"]
     }
   },
   "required": ["name"]

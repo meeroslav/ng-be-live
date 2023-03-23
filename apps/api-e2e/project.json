@@ -2,7 +2,6 @@
   "name": "api-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "implicitDependencies": ["api"],
-  "tags": ["scope:api", "type:e2e"],
   "targets": {
     "e2e": {
       "executor": "@nrwl/jest:jest",
@@ -19,5 +18,6 @@
         "lintFilePatterns": ["apps/api-e2e/**/*.{js,ts}"]
       }
     }
-  }
+  },
+  "tags": ["scope:api"]
 }

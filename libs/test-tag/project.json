@@ -1,0 +1,25 @@
+{
+  "name": "test-tag",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/test-tag/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/test-tag",
+        "main": "libs/test-tag/src/index.ts",
+        "tsConfig": "libs/test-tag/tsconfig.lib.json",
+        "assets": ["libs/test-tag/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/test-tag/**/*.ts"]
+      }
+    }
+  }
+}
