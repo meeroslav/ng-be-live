@@ -34,12 +34,16 @@
             "label": "Store"
           },
           {
+            "value": "test",
+            "label": "Test"
+          },
+          {
             "value": "shared",
             "label": "Shared"
           }
         ]
       },
-      "enum": ["api", "internal", "store", "shared"]
+      "enum": ["api", "internal", "store", "test", "shared"]
     }
   },
   "required": ["name"]
