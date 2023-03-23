@@ -1,6 +1,6 @@
 name: Run CI checks # The name will show up on the GitHub Actions dashboard
 
-on: [push] # This workflow will run only on Pull Requests
+on: [pull_request] # This workflow will run only on Pull Requests
 
 jobs:
   test-store: # give our job an ID
