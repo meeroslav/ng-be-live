@@ -8,8 +8,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      providers: [HttpClientTestingModule],
+      imports: [RouterTestingModule, HttpClientTestingModule],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       declarations: [AppComponent, NxWelcomeComponent],
     }).compileComponents();
