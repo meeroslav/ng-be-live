@@ -21,12 +21,21 @@
         "message": "In which directory to generate?",
         "type": "list",
         "items": [
-          { "value": "store", "label": "Store" },
-          { "value": "api", "label": "Api" },
-          { "value": "shared", "label": "Shared" }
+          {
+            "value": "api",
+            "label": "Api"
+          },
+          {
+            "value": "store",
+            "label": "Store"
+          },
+          {
+            "value": "shared",
+            "label": "Shared"
+          }
         ]
       },
-      "enum": ["store", "api", "shared"]
+      "enum": ["api", "store", "shared"]
     }
   },
   "required": ["name"]

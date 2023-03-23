@@ -64,5 +64,6 @@
     "@nrwl/angular:component": {
       "style": "css"
     }
-  }
+  },
+  "defaultProject": "api"
 }
