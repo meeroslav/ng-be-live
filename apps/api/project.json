@@ -68,6 +68,17 @@
           "codeCoverage": true
         }
       }
+    },
+    "deploy": {
+      "executor": "@bg-hoard/internal-plugin:fly-deploy",
+      "outputs": [],
+      "options": {
+        "distLocation": "dist/apps/api",
+        "flyAppName": "ng-be-nx-workshop-miro-fly"
+      },
+      "dependsOn": [
+        { "target": "build", "projects": "self", "params": "forward" }
+      ]
     }
   },
   "tags": ["scope:api", "type:app"],
