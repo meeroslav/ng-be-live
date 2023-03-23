@@ -8,8 +8,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      providers: [HttpClientTestingModule],
+      imports: [RouterTestingModule, HttpClientTestingModule],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       declarations: [AppComponent, NxWelcomeComponent],
     }).compileComponents();
@@ -19,12 +18,11 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
-    // make meanigless change
   });
 
-  it(`should have as title 'Game Hoard Board'`, () => {
+  it(`should have as title 'Board Game Hoard'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Game Hoard Board');
+    expect(app.title).toEqual('Board Game Hoard');
   });
 });
